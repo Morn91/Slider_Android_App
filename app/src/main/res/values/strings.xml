@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Slider</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="a0">Linear</string>
+    <string name="a1">Speedup</string>
+    <string name="a2">Slowdown</string>
+    <string name="a3">Up+down</string>
+    <string name="a4">Down+up</string>
+    <string name="error">Error</string>
+    <string name="started">Process started</string>
+    <string name="complete">Process complete</string>
+    <string name="stopped">Process stopped</string>
+    <string name="noConnectDialog">Could not connect to slider. Try again?</string>
+    <string name="stopDialog">Do you really want to stop the process?</string>
+    <string name="tooFastDialog">Too fast! Change time or acceleration.</string>
+</resources>

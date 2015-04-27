@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Слайдер</string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="a0">Линейно</string>
+    <string name="a1">Ускорение</string>
+    <string name="a2">Замедление</string>
+    <string name="a3">Ускр+змдл</string>
+    <string name="a4">Змдл+ускр</string>
+    <string name="error">Ошибка</string>
+    <string name="started">Процесс начался</string>
+    <string name="complete">Процесс завершен</string>
+    <string name="stopped">Процесс остановлен</string>
+    <string name="noConnectDialog">Не удалось соединиться со слайдером. Повторить попытку?</string>
+    <string name="stopDialog">Вы действительно хотите остановить процесс?</string>
+    <string name="tooFastDialog">Слишком быстро! Измените время или ускорение.</string>
+</resources>
