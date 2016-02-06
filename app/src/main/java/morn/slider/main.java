@@ -25,7 +25,6 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.TimePicker;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -158,7 +157,7 @@ public class main extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         try {
-                            output.write("-".getBytes());
+                            output.write('-');
                             request(null);
                         } catch (IOException e) {
                             Log.d("BLUETOOTH", e.getMessage());
@@ -176,7 +175,7 @@ public class main extends Activity {
         if(bluetoothSocket != null && bluetoothSocket.isConnected()) {
             String buff = "";
             try {
-                output.write("*".getBytes());
+                output.write('*');
                 int i = 0;
                 char a;
                 while(input.available() == 0 && i < 100) {
