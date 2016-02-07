@@ -9,6 +9,7 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">TimePickerWithSeconds</string>
     <string name="cancel">Cancel</string>
+    <string name="set">Set</string>
     <string name="time">Time : </string>
     <string name="time_set">Set time</string>
     <!-- From: file:/D:/Documents/Android/Slider/timePickerWithSeconds/src/main/res/values/styles.xml -->
