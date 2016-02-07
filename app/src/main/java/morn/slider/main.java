@@ -36,13 +36,12 @@ public class main extends Activity {
     public Typeface timerFont;
     public TextView timer;
     public TextView timerBg;
-    public TextView battery;
     public ProgressBar progressBar;
     public ImageView imageView;
     public ImageView imageView1;
-    public ImageView batteryImage;
     public Button startButton;
     public Button stopButton;
+    public Button battery;
     public ImageButton dirButton;
     public Spinner spinner;
 
@@ -71,7 +70,7 @@ public class main extends Activity {
         timerBg = (TextView)findViewById(R.id.timerBg);
         timerBg.setTypeface(timerFont);
 
-        battery = (TextView)findViewById(R.id.battery);
+        battery = (Button)findViewById(R.id.battery);
 
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         progressBar.setProgress(p);
@@ -79,11 +78,8 @@ public class main extends Activity {
         imageView = (ImageView)findViewById(R.id.imageView);
 
         imageView1 = (ImageView)findViewById(R.id.imageView1);
-        imageView1.setAlpha((float)0.05);
+        imageView1.setAlpha((float) 0.05);
         imageView1.setImageResource(R.drawable.a01234);
-
-        batteryImage = (ImageView)findViewById(R.id.batteryImage);
-        batteryImage.setImageResource(R.drawable.battery);
 
         startButton = (Button)findViewById(R.id.start);
         stopButton = (Button)findViewById(R.id.stop);
