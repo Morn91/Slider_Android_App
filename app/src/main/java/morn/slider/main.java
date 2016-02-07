@@ -41,7 +41,7 @@ public class main extends Activity {
     public ImageView imageView1;
     public Button startButton;
     public Button stopButton;
-    public Button battery;
+    public Button batteryButton;
     public ImageButton dirButton;
     public Spinner spinner;
 
@@ -70,8 +70,6 @@ public class main extends Activity {
         timerBg = (TextView)findViewById(R.id.timerBg);
         timerBg.setTypeface(timerFont);
 
-        battery = (Button)findViewById(R.id.battery);
-
         progressBar = (ProgressBar)findViewById(R.id.progressBar);
         progressBar.setProgress(p);
 
@@ -83,7 +81,7 @@ public class main extends Activity {
 
         startButton = (Button)findViewById(R.id.start);
         stopButton = (Button)findViewById(R.id.stop);
-
+        batteryButton = (Button)findViewById(R.id.battery);
         dirButton = (ImageButton)findViewById(R.id.dirButton);
         dirButton.setImageResource(R.drawable.dir0);
         dirButton.setOnClickListener(new View.OnClickListener() {
@@ -249,7 +247,7 @@ public class main extends Activity {
                 p = 0;
                 progressBar.setProgress(p);
             }
-            battery.setText(Math.round(100.0 * (float)(voltage - batMin) / (batMax - batMin)) + "%");
+            batteryButton.setText(Math.round(100.0 * (float) (voltage - batMin) / (batMax - batMin)) + "%");
         } else
             new connect().execute();
     }
@@ -260,7 +258,7 @@ public class main extends Activity {
             super.onPreExecute();
             progressBar.setIndeterminate(true);
             lock();
-            battery.setText("");
+            batteryButton.setText("");
             stopButton.setEnabled(false);
             startButton.setVisibility(View.VISIBLE);
             stopButton.setVisibility(View.INVISIBLE);
