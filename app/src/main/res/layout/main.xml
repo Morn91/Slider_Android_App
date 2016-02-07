@@ -110,7 +110,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/battery"
             android:gravity="center"
-            android:textSize="16sp"
+            android:textSize="32sp"
             android:clickable="true"
             android:onClick="request"
             android:layout_alignParentBottom="true"
@@ -119,6 +119,17 @@
             android:layout_alignTop="@+id/stop"
             android:layout_toLeftOf="@+id/stop"
             android:layout_toStartOf="@+id/stop" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/batteryImage"
+            android:layout_alignTop="@+id/battery"
+            android:layout_alignRight="@+id/battery"
+            android:layout_alignEnd="@+id/battery"
+            android:layout_alignBottom="@+id/battery"
+            android:layout_alignLeft="@+id/battery"
+            android:layout_alignStart="@+id/battery" />
     </RelativeLayout>
 
 </RelativeLayout>
