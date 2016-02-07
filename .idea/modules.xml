@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Slider.iml" filepath="$PROJECT_DIR$/Slider.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timePickerWithSeconds/timePickerWithSeconds.iml" filepath="$PROJECT_DIR$/timePickerWithSeconds/timePickerWithSeconds.iml" />
     </modules>
   </component>
 </project>
-

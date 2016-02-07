@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.NotificationManager;
-import android.app.TimePickerDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
@@ -24,7 +23,9 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.TimePicker;
+
+import com.ikovac.timepickerwithseconds.view.MyTimePickerDialog;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -355,16 +356,14 @@ public class main extends Activity {
     }
 
     public void setTime(View view) {
-        new TimePickerDialog(this, myCallBack, h, m, true).show();
+        MyTimePickerDialog mTimePicker = new MyTimePickerDialog(this, new MyTimePickerDialog.OnTimeSetListener() {
+            @Override
+            public void onTimeSet(com.ikovac.timepickerwithseconds.view.TimePicker view, int hourOfDay, int minute, int seconds) {
+
+            }
+        }, h, m, s, true);
+        mTimePicker.show();
     }
-    TimePickerDialog.OnTimeSetListener myCallBack = new TimePickerDialog.OnTimeSetListener() {
-        public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
-            h = hourOfDay;
-            m = minute;
-            s = 0;
-            timer.setText(String.format("%02d:%02d:%02d", h, m, s));
-        }
-    };
 
     public void lock() {
         timer.setClickable(false);
