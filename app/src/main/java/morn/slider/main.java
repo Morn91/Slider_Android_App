@@ -357,9 +357,13 @@ public class main extends Activity {
 
     public void setTime(View view) {
         MyTimePickerDialog mTimePicker = new MyTimePickerDialog(this, new MyTimePickerDialog.OnTimeSetListener() {
+
             @Override
             public void onTimeSet(com.ikovac.timepickerwithseconds.view.TimePicker view, int hourOfDay, int minute, int seconds) {
-
+                h = hourOfDay;
+                m = minute;
+                s = seconds;
+                timer.setText(String.format("%02d:%02d:%02d", h, m, s));
             }
         }, h, m, s, true);
         mTimePicker.show();
