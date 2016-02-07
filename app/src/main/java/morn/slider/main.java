@@ -262,6 +262,8 @@ public class main extends Activity {
             lock();
             battery.setText("");
             stopButton.setEnabled(false);
+            startButton.setVisibility(View.VISIBLE);
+            stopButton.setVisibility(View.INVISIBLE);
         }
         @Override
         protected Void doInBackground(Void... params) {
