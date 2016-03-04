@@ -118,6 +118,7 @@
                 android:layout_width="48sp"
                 android:layout_height="24dp"
                 android:id="@+id/battery"
+                android:onClick="request"
                 android:background="@drawable/battery"
                 android:layout_centerVertical="true"
                 android:layout_centerHorizontal="true" />
