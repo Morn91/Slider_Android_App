@@ -54,7 +54,7 @@ public class main extends Activity {
     public InputStream input;
     public OutputStream output;
 
-    public int h = 1, m = 0, s = 0, p = 0, dir = 0, batMin = 660, batMax = 840;
+    public int h = 1, m = 0, s = 0, p = 0, dir = 0;
     public String address = "30:14:10:17:01:77";
     public boolean go = false;
 
@@ -248,7 +248,7 @@ public class main extends Activity {
                 p = 0;
                 progressBar.setProgress(p);
             }
-            batteryButton.setText(Math.round(100.0 * (float) (voltage - batMin) / (batMax - batMin)) + "%");
+            batteryButton.setText(Math.round(voltage / 20.0) / 10.0 + "v");
         } else
             new connect().execute();
     }
